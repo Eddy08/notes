@@ -1,13 +1,20 @@
 # API
 
 1. Get:
+   a. Bucket Name:
    https://qytfke6by7.execute-api.us-east-1.amazonaws.com/s3/name
+   b. Notes with Notes ID:
+   https://qytfke6by7.execute-api.us-east-1.amazonaws.com/notes/e6a03450-e18a-11ef-b7aa-f5074eb603ea
 2. Post:
    curl -X POST \
    -H 'Content-Type: application/json' \
    -d '{"content":"Hello World","attachment":"hello.jpg"}' \
    https://qytfke6by7.execute-api.us-east-1.amazonaws.com/notes
    resposne: ![Post Success](lambda-post-1.png)
+3. Put:
+   curl -X PUT -H 'Content-Type: application/json' -d '{"content":"Hello Universe","attachment":"new-hello.jpg"}' https://qytfke6by7.execute-api.us-east-1.ama
+   zonaws.com/notes/560a10b0-e19d-11ef-a4eb-6908d886c2a7
+   {"status":true}
 
 # Monorepo Template
 
