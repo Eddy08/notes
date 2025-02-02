@@ -1,3 +1,14 @@
+# API
+
+1. Get:
+   https://qytfke6by7.execute-api.us-east-1.amazonaws.com/s3/name
+2. Post:
+   curl -X POST \
+   -H 'Content-Type: application/json' \
+   -d '{"content":"Hello World","attachment":"hello.jpg"}' \
+   https://qytfke6by7.execute-api.us-east-1.amazonaws.com/notes
+   resposne: ![Post Success](lambda-post-1.png)
+
 # Monorepo Template
 
 A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/docs/set-up-a-monorepo).
@@ -64,7 +75,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
 
 3. `scripts/`
 
-    This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
+   This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
 
    ```bash
    npm run shell src/example.ts
