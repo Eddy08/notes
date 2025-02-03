@@ -15,6 +15,9 @@
    curl -X PUT -H 'Content-Type: application/json' -d '{"content":"Hello Universe","attachment":"new-hello.jpg"}' https://qytfke6by7.execute-api.us-east-1.ama
    zonaws.com/notes/560a10b0-e19d-11ef-a4eb-6908d886c2a7
    {"status":true}
+4. Delete:
+   curl -X DELETE https://qytfke6by7.execute-api.us-east-1.amazonaws.com/notes/7beb69d0-e19f-11ef-b99b-cfab5772a8f1
+   {"status":true}
 
 # Monorepo Template
 

@@ -19,3 +19,4 @@ api.route("GET /s3/name", {
 });
 api.route("GET /notes/{id}", "packages/functions/src/get.main");
 api.route("PUT /notes/{id}", "packages/functions/src/update.main");
+api.route("DELETE /notes/{id}", "packages/functions/src/delete.main");
