@@ -8,6 +8,9 @@ export const api = new sst.aws.ApiGatewayV2("Api", {
       handler: {
         link: [table, bucket],
       },
+      args: {
+        auth: { iam: true },
+      },
     },
   },
 });
